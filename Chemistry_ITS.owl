@@ -1,0 +1,537 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS/"
+     xml:base="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:Chemistry_ITS="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#hasBond -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#hasBond">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#ChemicalElement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#Bond"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#hasBondType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#hasBondType">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#hasElement -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#hasElement">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#Molecule"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#ChemicalElement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#hasMoleculeType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#hasMoleculeType">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#Molecule"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#OrganicMolecule"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#hasProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#hasProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#ChemicalElement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#Property"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#hasReactionType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#hasReactionType">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#Reaction"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#AcidBaseReaction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#hasState -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#hasState">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#ChemicalElement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#StateOfMatter"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#hasStructure -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#hasStructure">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#ChemicalElement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#AtomicStructure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#participatesIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#participatesIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#ChemicalElement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#Reaction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#Bond"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#IonicBond"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#atomicNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#atomicNumber">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#ChemicalElement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#boilingPoint -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#boilingPoint">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#ChemicalElement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#meltingPoint -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#meltingPoint">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#ChemicalElement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#molecularWeight -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#molecularWeight">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#Molecule"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#AcidBaseReaction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#AcidBaseReaction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#Reaction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#AtomicStructure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#AtomicStructure"/>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#Bond -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#Bond"/>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#ChemicalElement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#ChemicalElement"/>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#ChemicalProperty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#ChemicalProperty">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#Property"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#PhysicalProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#CombustionReaction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#CombustionReaction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#Reaction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#CovalentBond -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#CovalentBond">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#Bond"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#ElectronConfiguration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#ElectronConfiguration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#AtomicStructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#Gas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#Gas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#StateOfMatter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#InorganicMolecule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#InorganicMolecule">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#Molecule"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#IonicBond -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#IonicBond">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#Bond"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#Liquid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#Liquid">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#StateOfMatter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#Metal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#Metal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#ChemicalElement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#MetallicBond -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#MetallicBond">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#Bond"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#Molecule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#Molecule"/>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#NeutronCount -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#NeutronCount">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#AtomicStructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#NobleGas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#NobleGas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#ChemicalElement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#NonMetal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#NonMetal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#ChemicalElement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#OrganicMolecule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#OrganicMolecule">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#Molecule"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#PhysicalProperty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#PhysicalProperty">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#Plasma -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#Plasma">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#StateOfMatter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#Polymer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#Polymer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#Molecule"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#Property -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#Property"/>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#ProtonCount -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#ProtonCount">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#AtomicStructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#Reaction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#Reaction"/>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#RedoxReaction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#RedoxReaction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#Reaction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#Solid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#Solid">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#StateOfMatter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#StateOfMatter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#StateOfMatter"/>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#TransitionMetal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#TransitionMetal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#ChemicalElement"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#Hydrogen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#Hydrogen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#ChemicalElement"/>
+        <Chemistry_ITS:atomicNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</Chemistry_ITS:atomicNumber>
+        <Chemistry_ITS:boilingPoint rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-252.87</Chemistry_ITS:boilingPoint>
+        <Chemistry_ITS:meltingPoint rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-259.16</Chemistry_ITS:meltingPoint>
+        <Chemistry_ITS:molecularWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.008</Chemistry_ITS:molecularWeight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#Methane -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#Methane">
+        <rdf:type rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#ChemicalElement"/>
+        <Chemistry_ITS:hasElement rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#Hydrogen"/>
+        <Chemistry_ITS:boilingPoint rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-161.5</Chemistry_ITS:boilingPoint>
+        <Chemistry_ITS:meltingPoint rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-182.5</Chemistry_ITS:meltingPoint>
+        <Chemistry_ITS:molecularWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#float">16.04</Chemistry_ITS:molecularWeight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#Oxygen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#Oxygen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#ChemicalElement"/>
+        <Chemistry_ITS:atomicNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</Chemistry_ITS:atomicNumber>
+        <Chemistry_ITS:boilingPoint rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-182.96</Chemistry_ITS:boilingPoint>
+        <Chemistry_ITS:meltingPoint rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-218.79</Chemistry_ITS:meltingPoint>
+        <Chemistry_ITS:molecularWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#float">16.0</Chemistry_ITS:molecularWeight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#Sodium -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#Sodium">
+        <rdf:type rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#ChemicalElement"/>
+        <Chemistry_ITS:atomicNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</Chemistry_ITS:atomicNumber>
+        <Chemistry_ITS:boilingPoint rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">883</Chemistry_ITS:boilingPoint>
+        <Chemistry_ITS:meltingPoint rdf:datatype="http://www.w3.org/2001/XMLSchema#float">97.8</Chemistry_ITS:meltingPoint>
+        <Chemistry_ITS:molecularWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#float">22.99</Chemistry_ITS:molecularWeight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#Water -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#Water">
+        <rdf:type rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#ChemicalElement"/>
+        <Chemistry_ITS:hasElement rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#Hydrogen"/>
+        <Chemistry_ITS:hasElement rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#Oxygen"/>
+        <Chemistry_ITS:boilingPoint rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</Chemistry_ITS:boilingPoint>
+        <Chemistry_ITS:molecularWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#float">18.015</Chemistry_ITS:molecularWeight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#AcidBaseReaction"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#CombustionReaction"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#RedoxReaction"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#CovalentBond"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#IonicBond"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#MetallicBond"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#ElectronConfiguration"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#NeutronCount"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#ProtonCount"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#Gas"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#Liquid"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#Plasma"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#Solid"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#InorganicMolecule"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#OrganicMolecule"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#Polymer"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#Metal"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#NobleGas"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#NonMetal"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS#TransitionMetal"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

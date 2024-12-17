@@ -1,0 +1,561 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS">
+    <Prefix name="" IRI="http://www.semanticweb.org/techassignment02/ontologies/2024/11/Chemistry_ITS/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#AcidBaseReaction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AtomicStructure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bond"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChemicalElement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChemicalProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CombustionReaction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CovalentBond"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElectronConfiguration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InorganicMolecule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IonicBond"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Liquid"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Metal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MetallicBond"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Molecule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NeutronCount"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NobleGas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NonMetal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OrganicMolecule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhysicalProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Plasma"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Polymer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Property"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProtonCount"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Reaction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RedoxReaction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Solid"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StateOfMatter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TransitionMetal"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasBond"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasBondType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasElement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMoleculeType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasProperty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasReactionType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasState"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasStructure"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#participatesIn"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#atomicNumber"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#boilingPoint"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#meltingPoint"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#molecularWeight"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hydrogen"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Methane"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Oxygen"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sodium"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Water"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#AcidBaseReaction"/>
+        <Class IRI="#Reaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChemicalProperty"/>
+        <Class IRI="#Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CombustionReaction"/>
+        <Class IRI="#Reaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CovalentBond"/>
+        <Class IRI="#Bond"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElectronConfiguration"/>
+        <Class IRI="#AtomicStructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gas"/>
+        <Class IRI="#StateOfMatter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InorganicMolecule"/>
+        <Class IRI="#Molecule"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IonicBond"/>
+        <Class IRI="#Bond"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Liquid"/>
+        <Class IRI="#StateOfMatter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Metal"/>
+        <Class IRI="#ChemicalElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MetallicBond"/>
+        <Class IRI="#Bond"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NeutronCount"/>
+        <Class IRI="#AtomicStructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NobleGas"/>
+        <Class IRI="#ChemicalElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NonMetal"/>
+        <Class IRI="#ChemicalElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OrganicMolecule"/>
+        <Class IRI="#Molecule"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhysicalProperty"/>
+        <Class IRI="#Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Plasma"/>
+        <Class IRI="#StateOfMatter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Polymer"/>
+        <Class IRI="#Molecule"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProtonCount"/>
+        <Class IRI="#AtomicStructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RedoxReaction"/>
+        <Class IRI="#Reaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Solid"/>
+        <Class IRI="#StateOfMatter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TransitionMetal"/>
+        <Class IRI="#ChemicalElement"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#AcidBaseReaction"/>
+        <Class IRI="#CombustionReaction"/>
+        <Class IRI="#RedoxReaction"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ChemicalProperty"/>
+        <Class IRI="#PhysicalProperty"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CovalentBond"/>
+        <Class IRI="#IonicBond"/>
+        <Class IRI="#MetallicBond"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ElectronConfiguration"/>
+        <Class IRI="#NeutronCount"/>
+        <Class IRI="#ProtonCount"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Gas"/>
+        <Class IRI="#Liquid"/>
+        <Class IRI="#Plasma"/>
+        <Class IRI="#Solid"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#InorganicMolecule"/>
+        <Class IRI="#OrganicMolecule"/>
+        <Class IRI="#Polymer"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Metal"/>
+        <Class IRI="#NobleGas"/>
+        <Class IRI="#NonMetal"/>
+        <Class IRI="#TransitionMetal"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#ChemicalElement"/>
+        <NamedIndividual IRI="#Hydrogen"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ChemicalElement"/>
+        <NamedIndividual IRI="#Methane"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ChemicalElement"/>
+        <NamedIndividual IRI="#Oxygen"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ChemicalElement"/>
+        <NamedIndividual IRI="#Sodium"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ChemicalElement"/>
+        <NamedIndividual IRI="#Water"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasElement"/>
+        <NamedIndividual IRI="#Methane"/>
+        <NamedIndividual IRI="#Hydrogen"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasElement"/>
+        <NamedIndividual IRI="#Water"/>
+        <NamedIndividual IRI="#Hydrogen"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasElement"/>
+        <NamedIndividual IRI="#Water"/>
+        <NamedIndividual IRI="#Oxygen"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#atomicNumber"/>
+        <NamedIndividual IRI="#Hydrogen"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#boilingPoint"/>
+        <NamedIndividual IRI="#Hydrogen"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">-252.87</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#meltingPoint"/>
+        <NamedIndividual IRI="#Hydrogen"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">-259.16</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#molecularWeight"/>
+        <NamedIndividual IRI="#Hydrogen"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.008</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#boilingPoint"/>
+        <NamedIndividual IRI="#Methane"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">-161.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#meltingPoint"/>
+        <NamedIndividual IRI="#Methane"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">-182.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#molecularWeight"/>
+        <NamedIndividual IRI="#Methane"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">16.04</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#atomicNumber"/>
+        <NamedIndividual IRI="#Oxygen"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#boilingPoint"/>
+        <NamedIndividual IRI="#Oxygen"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">-182.96</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#meltingPoint"/>
+        <NamedIndividual IRI="#Oxygen"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">-218.79</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#molecularWeight"/>
+        <NamedIndividual IRI="#Oxygen"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">16.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#atomicNumber"/>
+        <NamedIndividual IRI="#Sodium"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#boilingPoint"/>
+        <NamedIndividual IRI="#Sodium"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">883</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#meltingPoint"/>
+        <NamedIndividual IRI="#Sodium"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">97.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#molecularWeight"/>
+        <NamedIndividual IRI="#Sodium"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">22.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#boilingPoint"/>
+        <NamedIndividual IRI="#Water"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#molecularWeight"/>
+        <NamedIndividual IRI="#Water"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">18.015</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasBond"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasBondType"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasElement"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasMoleculeType"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasProperty"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasReactionType"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasState"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasStructure"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#participatesIn"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasBond"/>
+        <Class IRI="#ChemicalElement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasElement"/>
+        <Class IRI="#Molecule"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMoleculeType"/>
+        <Class IRI="#Molecule"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasProperty"/>
+        <Class IRI="#ChemicalElement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasReactionType"/>
+        <Class IRI="#Reaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasState"/>
+        <Class IRI="#ChemicalElement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasStructure"/>
+        <Class IRI="#ChemicalElement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#participatesIn"/>
+        <Class IRI="#ChemicalElement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+        <Class IRI="#Bond"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasBond"/>
+        <Class IRI="#Bond"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasElement"/>
+        <Class IRI="#ChemicalElement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMoleculeType"/>
+        <Class IRI="#OrganicMolecule"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasProperty"/>
+        <Class IRI="#Property"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasReactionType"/>
+        <Class IRI="#AcidBaseReaction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasState"/>
+        <Class IRI="#StateOfMatter"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasStructure"/>
+        <Class IRI="#AtomicStructure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#participatesIn"/>
+        <Class IRI="#Reaction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+        <Class IRI="#IonicBond"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#atomicNumber"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#boilingPoint"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#meltingPoint"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#molecularWeight"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#atomicNumber"/>
+        <Class IRI="#ChemicalElement"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#boilingPoint"/>
+        <Class IRI="#ChemicalElement"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#meltingPoint"/>
+        <Class IRI="#ChemicalElement"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#molecularWeight"/>
+        <Class IRI="#Molecule"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#atomicNumber"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#boilingPoint"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#meltingPoint"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#molecularWeight"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
